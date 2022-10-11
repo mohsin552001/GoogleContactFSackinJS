@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawemes/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <i onclick="hidesidebar()" class="fa fa-bars" aria-hidden="true"></i>
+                <img width="30px" height="30px" src="./images/contacts_48dp.png" alt="#"><span>Contacts</span>
+
+
+
+            </div>
+            <div id="searchsection">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i onclick="raisesearch()" class="fa fa-times" aria-hidden="true"></i>
+
+
+                <input type="text" placeholder="Search" onclick="hideandshowinput(event)"  onkeyup="showcross(event)"
+                    id="search-input">
+
+                    
+            </div>
+            <div id="actionsection">
+                <i class="fa fa-th-large" aria-hidden="true"></i>
+                <img class="imgs" width="30px" height="30px" src="./images/dddd(2).jpeg" alt="">
+
+            </div>
+        </div>
+        <div id="content">
+            <div id="sidebar">
+                <div class="suggestcontact">
+                    <div onclick="showcontact()" id="firstsuggest"><i class="fa fa-user-o" aria-hidden="true"></i>
+                        <span>Creat a contact</span>
+                    </div>
+
+                    <div id="secondsuggest"><i class="fa fa-users" aria-hidden="true"></i>
+                        <span>Creat multiple contacts</span>
+                    </div>
+                </div>
+
+                <div onclick="showsuggestcontact(event)" id="firstdiv">
+                    <img src="./images/plussnipping.PNG" alt="">
+                    <span>Creat contact</span>
+                </div>
+                <div id="seconddiv">
+                    <div class="littledivs backblue ">
+                        <i class="fa fa-user-o" aria-hidden="true"></i> <span>Contacts</span>
+                    </div>
+                    <div class="littledivs">
+                        <i class="fa fa-tags" aria-hidden="true"></i> <span>Lables</span>
+                    </div>
+                    <div onclick="creatlable(event)" class="littledivs">
+                        <i  class="fa fa-plus" aria-hidden="true"></i> <span>Creat Lable</span>
+                    </div>
+                  
+        <table class="labletable">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+               
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody class="secondtbody"></tbody>
+        </table>
+
+
+
+
+                </div>
+                <hr>
+            </div>
+            <div id="contentsection">
+
+                <table id="table">
+
+                    <thead id="theading">
+
+                        <th class="id-hide">ID</th>
+                        <th class="th">NAME</th>
+                        <th class="th">email</th>
+                        <th class="th">phoneNumber</th>
+                        <th class="th">Title&Company</th>
+                        <th class="th">DELETE</th>
+                        <th class="th">EDIT</th>
+                        <hr>
+                    </thead>
+
+                    <tbody class="tbody"></tbody>
+                </table>
+
+
+                <div class="contactus">
+
+                    <main>
+
+                        <i onclick="hideContact()" class="fa fa-times" aria-hidden="true"></i>
+                        <div class="contactsid">
+
+                            <img class="realimg" width="150px" height="150px" src="./images/realworluser.webp" alt="">
+                            <button onclick="hidecontacts(event)" id="add-name-btn"><b>Save</b></button>
+
+                        </div>
+                        <hr>
+
+                        <div class="contdivs">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <input type="text" placeholder="Name" id="name-input">
+                            <hr>
+                        </div>
+                        <div class="contdivs">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <input type="email" placeholder="Email" id="email-input">
+                            <hr>
+                        </div>
+                        <div class="contdivs">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <input type="number" placeholder="phone Number" id="phonenumber-input">
+                            <hr>
+                        </div>
+                        <div class="contdivs">
+                            <i class="fa fa-building-o" aria-hidden="true"></i>
+                            <input type="text" placeholder="Company" id="company-input">
+                            <hr>
+                        </div>
+
+
+
+
+
+                        <br><br><br>
+
+                        <div>
+                           
+
+                    </main>
+
+                </div>
+
+            </div>
+        </div>
+
+        <section hidden id="update-row">
+            <label>Name:</label>
+            <input type="text" id="update-name-input">
+            <div class="divbottom"></div>
+
+            <label>Email:</label>
+            <input type="email" id="update-email-input">
+            <div class="divbottom"></div>
+
+
+
+            <label>PhoneNumber:</label>
+            <input type="number" id="update-phonenumber-input">
+            <div class="divbottom"></div>
+
+
+            <label>Company:</label>
+            <input type="text" id="update-company-input">
+            <div class="divbottom"></div>
+            <button id="update-row-btn">Update</button>
+        </section>
+
+
+    </div>
+    </div>
+    <div class="savelable">
+        <input type="text" class="name-input">
+        <button onclick="hidelables()">cancel</button>
+        <button type="submit" id="add-btn-input">save</button>
+    </div>
+<div>
+
+
+
+         <section hidden id="edit-row">
+            <label>Name:</label>
+            <input type="text"  id="edit-name-input">
+          <button id="edit-btn">updata</button>
+        </section> 
+   
+    </div> 
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

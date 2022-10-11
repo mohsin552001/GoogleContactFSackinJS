@@ -1,0 +1,472 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3c4043;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80px;
+}
+
+#logo {
+  cursor: pointer;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+#logo .fa-bars {
+  color: #626669;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#logo .fa-bars:hover {
+  background-color: #dfdcdc;
+}
+
+#searchsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#searchsection #search-input {
+  width: 50%;
+  height: 40px;
+  padding-left: 40px;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  color: #3c4043;
+}
+
+#searchsection #search-input.active {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 2px 2px #e7dede;
+          box-shadow: 0px 0px 2px 2px #e7dede;
+}
+
+#searchsection .fa-search {
+  position: absolute;
+  top: 30%;
+  left: 5px;
+  color: #626669;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 9px;
+}
+
+#searchsection .fa-search:hover {
+  background-color: #dfdcdc;
+}
+
+#searchsection .fa-times {
+  position: absolute;
+  top: 26%;
+  right: 48%;
+  color: #626669;
+  border-radius: 25px;
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#searchsection .fa-times:hover {
+  background-color: #dfdcdc;
+}
+
+#actionsection {
+  width: 100px;
+  overflow: hidden;
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#actionsection .imgs {
+  border-radius: 50px;
+  color: #626669;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#actionsection .imgs:hover {
+  border: 3px solid gray;
+}
+
+#actionsection .fa-th-large {
+  color: #626669;
+}
+
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#content #sidebar {
+  width: 250px;
+  height: 100vh;
+}
+
+#content #sidebar #firstdiv {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50px;
+  outline: none;
+  color: #3c4043;
+  -webkit-box-shadow: 1px 1px 1px 1px #f3f3f3;
+          box-shadow: 1px 1px 1px 1px #f3f3f3;
+}
+
+#content #sidebar #firstdiv:hover {
+  color: blue;
+  -webkit-box-shadow: 0px 2px 5px 5px #f7eeee;
+          box-shadow: 0px 2px 5px 5px #f7eeee;
+}
+
+#content #sidebar #seconddiv .backblue {
+  background-color: #e2e2f3;
+  color: #2828f1;
+}
+
+#content #sidebar #seconddiv .littledivs {
+  height: 40px;
+  padding-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#content #sidebar #seconddiv .littledivs span {
+  padding: 30px;
+}
+
+#content #sidebar #seconddiv .littledivs:hover {
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+#content #sidebar #seconddiv .littledivs .fa-user-o {
+  color: blue;
+}
+
+#contentsection table thead .id-hide {
+  display: none;
+}
+
+#contentsection table .tbody tr {
+  border: 0px solid;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+#contentsection table .tbody tr:hover {
+  background-color: #e4e4e4;
+  outline: none;
+  border: 0px solid;
+}
+
+#contentsection table .tbody tr td {
+  padding: 12px 70px;
+  outline: none;
+  border: 0px solid;
+}
+
+#contentsection table .tbody tr td .idhide {
+  display: none;
+}
+
+#contentsection table .tbody tr .delete-row-btn {
+  height: 40px;
+  width: 70px;
+  outline: none;
+  border: 0px solid;
+  border-radius: 5px;
+}
+
+#contentsection table .tbody tr .delete-row-btn:active {
+  background-color: #aca4a4;
+}
+
+#contentsection table .tbody tr .delete-row-btn:hover {
+  background-color: #ecdddd;
+}
+
+#contentsection table .tbody tr .edit-row-btn {
+  height: 40px;
+  width: 70px;
+  outline: none;
+  outline: none;
+  border: 0px solid;
+  border-radius: 5px;
+}
+
+#contentsection table .tbody tr .edit-row-btn:active {
+  background-color: #aca4a4;
+}
+
+#contentsection table .tbody tr .edit-row-btn:hover {
+  background-color: #ecdddd;
+}
+
+#contentsection .contactus {
+  width: 100%;
+  display: none;
+}
+
+#contentsection .contactus .fa-times {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#contentsection .contactus .contactsid .realimg {
+  border-radius: 50%;
+  margin-left: 7%;
+}
+
+#contentsection .contactus .contactsid #add-name-btn {
+  margin-left: 700px;
+  height: 35px;
+  width: 85px;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ebe1e1;
+}
+
+#contentsection .contactus .contactsid #add-name-btn:hover {
+  background-color: #d4cdcd;
+}
+
+#contentsection .contactus .contdivs {
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+#contentsection .contactus .contdivs hr {
+  width: 510px;
+  margin-right: 290px;
+}
+
+#contentsection .contactus .contdivs input {
+  width: 500px;
+  height: 40px;
+  outline: none;
+  border: 0px;
+}
+
+#contentsection .contactus .contdivs .fa {
+  margin-right: 20px;
+}
+
+#contentsection .contactus.active {
+  display: block;
+}
+
+.suggestcontact {
+  width: 230px;
+  height: 100px;
+  position: absolute;
+  left: 10px;
+  top: 110px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 5px #dfd7d7;
+          box-shadow: 0px 0px 5px 5px #dfd7d7;
+  display: none;
+}
+
+.suggestcontact #firstsuggest {
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.suggestcontact #firstsuggest:hover {
+  background-color: #e9e2e2;
+}
+
+.suggestcontact #secondsuggest {
+  width: 200px;
+  height: 40px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.suggestcontact #secondsuggest:hover {
+  background-color: #e9e2e2;
+}
+
+.suggestcontact.active {
+  display: block;
+}
+
+#update-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  display: none;
+}
+
+#update-row input {
+  height: 40px;
+  border: 0px solid;
+  outline: none;
+}
+
+#update-row .divbottom {
+  border: 0.5px solid;
+}
+
+.idhide {
+  display: none;
+}
+
+#update-row-btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: 0px solid;
+}
+
+#update-row-btn:hover {
+  background-color: #dfdcdc;
+}
+
+.savelable {
+  border: 1px solid;
+  height: 150px;
+  width: 500px;
+  display: none;
+  background-color: #c7c7c7;
+  border: 0px solid;
+  border-radius: 10px;
+  padding-top: 100px;
+  position: absolute;
+  top: 250px;
+  left: 600px;
+}
+
+.savelable input {
+  height: 35px;
+  width: 100%;
+  border: 0px solid;
+  border-radius: 8px;
+}
+
+.savelable button {
+  height: 35px;
+  width: 80px;
+  border: 0px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.savelable button:hover {
+  background-color: #e0d8d8;
+}
+
+.savelable #add-btn-input {
+  margin-left: 335px;
+}
+
+.creatlable.active {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
